@@ -4,8 +4,7 @@
   <test  name="Test">
     <classes>
       <class name="com.hdfc.qa.testcases.ProfilePageTest"/>
-      <class name="com.hdfc.qa.testcases.LoginPageTest"/>
-      <class name="com.hdfc.qa.testcases.DashboardPageTest"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
