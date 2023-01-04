@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hdfc.qa.base.BasePage;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class LoginPage extends BasePage {
 	
@@ -41,11 +42,20 @@ public LoginPage() throws IOException {
 	public DashboardPage clickOnLogin(String un, String pwd ) throws IOException {
 		
 		custid.sendKeys(un);
+		test.log(LogStatus.INFO, "CustID is Entered.");
 		
 		continuelogin.click();
+		test.log(LogStatus.INFO, "Click on Continue.");
+		
 		passw.sendKeys(pwd);
+		test.log(LogStatus.INFO, "Password is Entered.");
+		
 		secureAccessID.click();
+		test.log(LogStatus.INFO, "Check box is clicked.");
+		
 		loginBtn.click();
+		test.log(LogStatus.INFO, "Click on Login.");
+
 		
 		return new DashboardPage();
 		
